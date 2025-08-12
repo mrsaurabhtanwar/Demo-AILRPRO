@@ -8,7 +8,6 @@ import pandas.errors
 
 api_key = st.secrets["GEMINI_API_KEY"]
 
-
 # Import helper functions
 try:
     from helper_functions import (
@@ -23,7 +22,7 @@ try:
     )
     
     # Test API connection at startup
-    api_working, api_message = test_api_connection()
+    api_working, api_message = test_api_connection(api_key)
     api_status = "✅" if api_working else "❌"
     
 except ImportError as e:
