@@ -5,6 +5,10 @@ import os
 from datetime import datetime
 import pandas.errors
 
+
+api_key = st.secrets["GEMINI_API_KEY"]
+
+
 # Import helper functions
 try:
     from helper_functions import (
