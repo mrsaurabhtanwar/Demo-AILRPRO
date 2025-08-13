@@ -1,11 +1,11 @@
-# helper_functions.py - CORRECTED VERSION
+# helper_functions.py
 
 import google.generativeai as genai
 import pandas as pd
 import os
 import streamlit as st
 
-# Configure the API key - FIXED VERSION
+# Configure the API key
 try:
     # First, try to get from Streamlit secrets (for deployed apps)
     if hasattr(st, 'secrets') and 'GEMINI_API_KEY' in st.secrets:
